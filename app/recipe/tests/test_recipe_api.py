@@ -92,7 +92,6 @@ class PrivateRecipeApiTests(TestCase):
         self.assertEqual(len(res.data), 1)
         self.assertEqual(res.data, serializer.data)
 
-
     def test_veiw_recipe_detail(self):
         """Test viewing a recipe detail"""
         recipe = sample_recipe(user=self.user)
